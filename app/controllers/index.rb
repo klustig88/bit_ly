@@ -2,7 +2,7 @@ get '/' do
   erb :index
 end
 
-post '/urls'
+post '/urls' do
   
 end
 
