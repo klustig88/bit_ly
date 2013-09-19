@@ -4,5 +4,6 @@ class CreateUrls < ActiveRecord::Migration
       t.string :norm_url
       t.string :short_url
       t.timestamps
+    end
   end
 end

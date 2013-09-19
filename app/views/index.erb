@@ -2,11 +2,17 @@
   <h1>Welcome to bit.ly!</h1>
   
   <form action="/urls" method="POST">
-    <label>Input URL to shorten: <input type="text" name="url"></label>
-    <br>
+    <label>Input URL to shorten: <input type="text" name="url"></label><br>
     <input type="submit" value="Shorten your URL">
   </form>
   <br>
 
+  <% Url.all.each do |yes| %>
+  Normal URL:  
+  <%= yes.norm_url %><br>
+  Short URL:  
+  <a href="<%= yes.norm_url %>"><%= yes.short_url%></a><br><br>
+  <% end %>
+  
 
 </div>
